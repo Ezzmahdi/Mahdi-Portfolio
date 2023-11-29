@@ -36,6 +36,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow-x: hidden;
   }
 
   .landing {
@@ -82,9 +83,17 @@ body {
   background-color: #34353b;
 }
 
-@media (max-width: 700px) {
-  .responsive-text {
-    font-size: 10vw;
+@media (max-width: 768px) {
+  .landing .intro h3 {
+    color: #fbfbfb;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .landing .intro h3 span {
+    color: #fec86a;
+    font-weight: 600;
+    font-size: 1rem;
   }
 }
 
@@ -119,10 +128,14 @@ header {
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 80vw;
 }
 
 header nav {
+  overflow: auto;
+  position: fixed;
+  top: 1;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,7 +223,6 @@ header nav .search i {
   color: #fbfbfb;
   font-weight: 400;
   font-size: 32px;
-  margin-left: 10vw;
 }
 
 .landing .intro h3 span {
@@ -223,7 +235,6 @@ header nav .search i {
   height: 48px;
   width: 144px;
   margin-top: 2.5vh;
-  margin-left: 10vw;
   background-color: transparent;
   border: 2px solid #fec86a;
   border-radius: 8px;
@@ -2007,11 +2018,12 @@ svg {
   .section--page{
       padding-top: 1em;
       padding-bottom: 1em;
+      padding-left: 5%;
   }
 
   .card--work-history{
     border-left: none;
-    padding-left: 0;
+    padding-left: 5%;
   }
 }
 
@@ -2025,4 +2037,5 @@ svg {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
+  left: 1;
 }
