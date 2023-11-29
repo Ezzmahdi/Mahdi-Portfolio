@@ -10,11 +10,46 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  overflow: auto;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #34353b;
+}
+
+@media (max-width: 700px) {
+  .responsive-text {
+    font-size: 10vw;
+  }
+}
+
+.responsive-img {
+  height: 75px; /* default height for large screens */
+}
+
+/* For medium screens */
+@media (max-width: 992px) {
+  .responsive-img {
+      height: 60px;
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .responsive-img {
+      height: 45px;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 576px) {
+  .responsive-img {
+      height: 30px;
+  }
 }
 
 header {
@@ -841,7 +876,7 @@ svg {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
