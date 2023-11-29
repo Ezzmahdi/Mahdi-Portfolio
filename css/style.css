@@ -14,6 +14,67 @@ section {
   overflow: auto;
 }
 
+@media (max-width: 768px) {
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .skill-card {
+      flex: 1 0 200px;
+      margin: 10px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .myprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .landing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-projects {
+    order: 1;
+  }
+  .other-child {
+    order: 0;
+  }
+}
+
+@media (max-width: 768px) { /* This is typically the breakpoint for md screens */
+  .project-card {
+    width: fit-content; /* Adjust as needed */
+    height: fit-content; /* Adjust as needed */
+  }
+  .project-card .title h3 {
+    font-size: 0.5rem; /* Adjust as needed */
+  }
+  .project-card .tech-stack p {
+    font-size: 0.4rem; /* Adjust as needed */
+  }
+  .project-img-1, .project-img-2, .project-img-3 {
+    width: 70%; /* Adjust as needed */
+    height: 80%; /* Adjust as needed */
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
