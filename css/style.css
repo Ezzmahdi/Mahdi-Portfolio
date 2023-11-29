@@ -212,6 +212,7 @@ header nav .search i {
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
+  right: 0;
 }
 
 .landing .intro {
